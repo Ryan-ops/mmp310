@@ -1,0 +1,16 @@
+body{
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,115,254,0.7539390756302521) 35%, rgba(0,212,255,1) 100%);
+
+font-size: 20px;
+font-family: verdana;
+color: white;
+}
+
+a{
+	color: green;
+}
+
+h1, a{
+	font-size: 3em;
+}
