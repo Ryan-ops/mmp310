@@ -25,7 +25,7 @@ var DaxterY = 510;
 var story = "Once upon a time, there were two characters named Jak and Daxter";
 // beach, ocean, island
 var currentSetting = "beach";
-=
+
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 
