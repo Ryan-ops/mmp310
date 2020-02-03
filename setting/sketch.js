@@ -36,11 +36,12 @@ function setup(){
 function draw(){
 	//  Conditional statement
 	if (currentSetting == "park.png"){
-		background ('lightblue');
+		loadImage('park.png')
+		// background ('lightblue');
 
-		fill('SANDYBROWN');
-		noStroke();
-		rect(0, height * 2/3, width, height * 1/3);
+		// fill('SANDYBROWN');
+		// noStroke();
+		// rect(0, height * 2/3, width, height * 1/3);
 
 // ocean setting
 	}else if (currentSetting == "ocean") {
