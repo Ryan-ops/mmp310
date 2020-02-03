@@ -35,7 +35,7 @@ function setup(){
 
 function draw(){
 	//  Conditional statement
-	if (currentSetting == "beach"){
+	if (currentSetting == "park.png"){
 		background ('lightblue');
 
 		fill('SANDYBROWN');
