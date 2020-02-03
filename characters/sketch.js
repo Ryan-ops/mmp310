@@ -24,7 +24,7 @@ var JakY = 200;
 var DaxterX = 500;
 var DaxterY = 510;
 
-var story = "Once upon a time, there were two characters named Giant and ";
+var story = "Once upon a time, they were two Characters named Jak and Daxter. Man's bestfriend";
 // run once to setup the browser
 function setup(){
 	createCanvas(windowWidth, windowHeight);
