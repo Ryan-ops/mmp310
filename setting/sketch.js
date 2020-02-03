@@ -6,6 +6,7 @@ setting sketch
 
 var jak;
 var daxter;
+var park;
 
 function preload(){
 	jak = loadImage('Jak.png');
