@@ -11,7 +11,7 @@ var park;
 function preload(){
 	jak = loadImage('Jak.png');
 	daxter = loadImage('Daxter.png');
-	park =  loadImage("park1.gif");
+	park =  loadImage("park.png");
 }
 
 
