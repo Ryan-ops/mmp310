@@ -11,7 +11,7 @@ var park;
 function preload(){
 	jak = loadImage('Jak.png');
 	daxter = loadImage('Daxter.png');
-	park =  loadImage("park.png");
+	park =  loadImage("park1.png");
 }
 
 
@@ -24,7 +24,7 @@ var DaxterY = 510;
 
 var story = "Once upon a time, there were two characters named Jak and Daxter";
 // beach, ocean, island
-var currentSetting = "park.png";
+var currentSetting = "beach";
 
 function setup(){
 	createCanvas(windowWidth, windowHeight);
@@ -36,12 +36,11 @@ function setup(){
 function draw(){
 	//  Conditional statement
 	if (currentSetting == "park.png"){
-		loadImage('park.png')
-		// background ('lightblue');
+		background ('lightblue');
 
-		// fill('SANDYBROWN');
-		// noStroke();
-		// rect(0, height * 2/3, width, height * 1/3);
+		fill('SANDYBROWN');
+		noStroke();
+		rect(0, height * 2/3, width, height * 1/3);
 
 // ocean setting
 	}else if (currentSetting == "ocean") {
