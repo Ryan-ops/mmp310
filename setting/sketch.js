@@ -22,7 +22,7 @@ var jakY = 200;
 var daxterX = 400;
 var daxterY = 100;
 
-var story = "Once upon a time, there were two characters named Jak and Daxter.";
+var story = "Jak and Daxter are on the beach";
 
 // beach, ocean, island
 var currentSetting = "beach";
@@ -117,7 +117,7 @@ function mousePressed() {
 
 	} else if (currentSetting == "ocean") {
 		currentSetting = "island";
-		story = "Jak and Daxter went to the beach to relax.";
+		story = "After a long day, Jak and Daxter went home";
 
 		daxterX = 300;
 
