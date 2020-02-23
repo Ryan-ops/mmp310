@@ -5,14 +5,14 @@
 
 var jakImage;
 var daxterImage;
-var islandImage;
+var houseImage;
 var park;
 
 function preload() {
 	jakImage = loadImage('jak3.png');
 	daxterImage = loadImage('daxter1.png');
-	islandImage = loadImage('house-copy-1.gif');
-	park = loadImage('park.gif');
+	houseImage = loadImage('house-copy-1.gif');
+	parkImage = loadImage('park.gif');
 }
 
 // location variables
@@ -31,28 +31,28 @@ function draw() {
 	// conditional statement
     if(currentSetting == "beach"){
         beach();
-		jak(100, height * 2/3);
-		daxter(300, height * 2/3);
-		narration("Once upon a time, there were two characters named Jak and Daxter.");
+		jak(200, height * 2/3);
+		daxter(700, height * 2/3);
+		narration("The adventures of Jak and Daxter.Jak and Daxter are at the beach having a good time");
         
     
-    }else if (currentSetting == "ocean") {
-       ocean();
-		jak(400, height * 2/3);
-		daxter(500, height * 2/3);
-		narration("Jak and Daxter decided to swim across the ocean.");
+    }else if (currentSetting == "park") {
+       park();
+		jak(500, height * 2/3);
+		daxter(200, height * 2/3);
+		narration("After the Jak and Daxter when to park for a walk");
     
     
-    }else if (currentSetting == "island") {
-        island();
-		jak(400, height * 2/3);
-		daxter(600, height * 2/3);
-		narration("Jak and Daxter arrived at an island in the middle of the ocean.");
+    }else if (currentSetting == "house") {
+        house();
+		jak(250, height * 2/3);
+		daxter(700, height * 2/3);
+		narration("Later Jak and Daxter went home. ");
     
     }else if (currentSetting == "ending"){
-        beach();
-		jak(width - 100, height * 2/3);
-		daxter(width - 200, height * 2/3);
+        house();
+//		jak(width - 100, height * 2/3);
+//		daxter(width - 200, height * 2/3);
 		narration("The end.");
     
     }
@@ -94,12 +94,22 @@ function instructions() {
 /* settings functions */
 function beach() {
 	background('lightblue');
+    fill(299,255,0);
+	circle(80, 60, 200);
+    fill(255, 255, 255);
+	rect(500, 300, 60, 200);
+	rect(300, 300, 60, 300);
+	rect(200, 300, 60, 200);
+	rect(600, 300, 60, 200);
+    fill(133, 113, 222);
+	circle(600, 480, 50);
 	fill('SANDYBROWN');
 	noStroke();
 	rect(0, height * 2/3, width, height * 1/3);
+    
 }
 
-function ocean() {
+function park() {
 	background('lightblue');
 
 	// water
@@ -107,10 +117,10 @@ function ocean() {
 	noStroke();
 //	rect(0, height * 2/3, width, height * 1/3);
 
-	image(park, width/2 , height * 2/3);
+	image(parkImage, width/2 , height * 2/3);
 }
 
-function island() {
+function house() {
 	background('lightblue');
 
 	// water
@@ -119,17 +129,18 @@ function island() {
 	
 
 	// island
-	image(islandImage, width/2, height * 2/3);
+	image(houseImage, width/2, height * 2/3);
 }
+
 
 function mousePressed() {
 	// change scene 
 	// scene order: beach, ocean, island
 	if (currentSetting == "beach") {
-		currentSetting = "ocean";
-	} else if (currentSetting == "ocean") {
-		currentSetting = "island";
-	} else if (currentSetting == "island") {
+		currentSetting = "park";
+	} else if (currentSetting == "park") {
+		currentSetting = "house";
+	} else if (currentSetting == "house") {
 		currentSetting = "ending";
 	} else if (currentSetting == "ending") {
 		currentSetting = "beach";
@@ -143,10 +154,10 @@ function keyPressed() {
 		// scene order: beach, ocean, island
 		if (currentSetting == "beach") {
 			// change setting
-			currentSetting = "ocean";
-		} else if (currentSetting == "ocean") {
-			currentSetting = "island";
-		} else if (currentSetting == "island") {
+			currentSetting = "park";
+		} else if (currentSetting == "park") {
+			currentSetting = "house";
+		} else if (currentSetting == "house") {
 			currentSetting = "beach";
 		}
 	}
