@@ -31,15 +31,15 @@ function setup() {
     for (let i = 0; i < numDax; i++){
         daxX.push(x);
         //update x, distributing number of clouds across canvas
-        x += width/numDax + random(-100, 100);
+        x += width/numDax + random(-100, 200);
         daxY.push(random(height/2));
     }
     
-    let y = 750;
+    let y =450;
     for(let i = 0;  i < numJak; i++){
         jakX.push(random(jakImage.width, width - jakImage.width));
         jakY.push(y);
-        y+=30;
+        y+=40;
     
     
     
@@ -75,7 +75,7 @@ function draw(){
 		image(daxterImage, daxterX[i], daxterY[i]);
 
 		// animate
-		daxterX[i] += daxterSpeedX[i] + random(1);
+		daxterX[i] += daxterSpeedX[i] + random(2);
 		daxterY[i] += daxterSpeedY[i] + random(-0.5, 0.5);
 
 		// reset daxter
@@ -86,7 +86,7 @@ function draw(){
 		// contain y value of daxter
 		if (daxterY[i] < height * 2/3 || 
 			daxterY[i] > height - daxterImage.height) {
-			daxterSpeedY[i] *= -1;
+			daxterSpeedY[i] *= -2;
 		}
 	}
         //dax
@@ -96,6 +96,7 @@ function draw(){
 
 		// animate x
 		daxX[i] += 1;
+            
 
 		// check if dax is beyond right side of canvas
 		if (daxX[i] > width) {
