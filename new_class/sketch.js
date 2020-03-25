@@ -41,7 +41,7 @@ function setup() {
 
 	for (let i = 0; i < numDax; i++) {
 		let x = random(width);
-		let y = random(height * 2/3, height);
+		let y = random(height * 1/3, height);
 		let d = new Dax(x, y, daxImage);
 		dax.push(d);
 	}
