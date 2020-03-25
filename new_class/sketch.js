@@ -53,18 +53,18 @@ function draw() {
   image(parkImage, width/2 , height * 2/3);
 
 
-	// draw trees
+	// draw jak
 	for (let i = 0; i < numJak; i++) {
 		jak[i].draw();
 	}
 
-	// draw fish
+	// draw dax
 	for (let i = 0; i < numDax; i++) {
 		dax[i].draw();
 		dax[i].update();
 	}
 
-	// draw clouds
+	// draw bones
 	for (let i = 0; i < numBones; i++) {
 		bones[i].draw();
 		bones[i].update();
