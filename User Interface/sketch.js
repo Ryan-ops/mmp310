@@ -91,9 +91,7 @@ function setup() {
 	jakSlider.position(360, 30);
 	jakSlider.input(updateJak);
     
-//    function updateHue() {
-//	jakHue = hueSlider.value();
-//}
+
       function updateBonesSpeed() {
 	bonesMinSpeed = bonesSpeedSlider.value();
 	bonesMaxSpeed = bonesMinSpeed * 2;
