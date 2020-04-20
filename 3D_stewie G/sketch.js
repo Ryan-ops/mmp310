@@ -32,7 +32,7 @@ function draw() {
 
 	// direction values -1, 1
 	directionalLight(255, 255, 255, 1, 1, -1);
-	pointLight(255, 255, 0,  mouseX - width/2, mouseY - height/2, 150);
+	pointLight(255, 255 , 0,  mouseX - width/2, mouseY - height/2, 150);
 
 
 	ambientMaterial(255);
@@ -57,9 +57,9 @@ function draw() {
 //	 stroke(0, 255, 0);
 //	 noFill();
  
-	// cat
+	// Stewie
 	ellipsoid(150, 100, 100); // head
-		// left ear
+   // left ear
 	push();
 	rotateZ(PI * -0.5);
 	translate(1, -150, 0);
@@ -104,8 +104,7 @@ function draw() {
 	torus(15, 15);
 	pop();
     
-    //nose
-    // hair
+    
 specularMaterial(0, 0, 0);
 	push();
 	translate(50, -80, 100);
@@ -122,7 +121,8 @@ specularMaterial(0, 0, 0);
 	
 
 	pop();
-
+    
+//Hair
 	push();
 	translate(80, -70, 100);
 	rotateY(PI * 2.5);
@@ -277,154 +277,6 @@ push();
 
 }
 
-// hair
-//specularMaterial(0, 0, 0);
-	push();
-	translate(50, -80, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-	push();
-	translate(80, -70, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-		push();
-	translate(20, -80, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-			push();
-	translate(-10, -80, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-			push();
-	translate(-40, -80, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-			push();
-	translate(-70, -74, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-			push();
-	translate(-100, -62, 100);
-	rotateY(PI * 2.5);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-
-// 	eye brows
-	push();
-	translate(60, -50, 100);
-	rotateY(PI * 1.3);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
-
-// 	eye brows
-push();
-	translate(-60, -50, 100);
-	rotateY(PI * -1.3);
-
-	for (let x = -50; x < 50; x += 15) {
-		push();
-		translate(x, 0, 0);
-
-		box(5, 5);	
-		pop();
-	}
-
-	
-
-	pop();
 
 
     
