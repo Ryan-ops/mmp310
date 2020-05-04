@@ -1,6 +1,6 @@
 var particleSystem;
 var boxSize = 250;
-let r, g, b;
+
 var amp;
 let music;
 var stewie = []; // list of stewie sounds
@@ -21,18 +21,18 @@ function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
 	noStroke();
 	particleSystem = new System(createVector(0, 0, 0));
-    r = random(255);
-    g = random(255);
-    b = random(255);
-
+   
 	amp = new p5.Amplitude();
 	amp.setInput(music);
+    music.loop();
+//    background(0,255,0);
 }
 
 function keyPressed() {
 	if (keyCode == 32) { // Space bar
 		if (music.isPlaying()) {
-			music.stop();
+			music.pause();
+//            background(255,0,0);
            
 		} else {
 			music.play();
@@ -42,10 +42,6 @@ function keyPressed() {
 
 	if (keyCode == 13) { // Enter
 		particleSystem.add();
-        r = random(255);
-        g = random(255);
-        b = random(255);
-        
 	}
 }
 
