@@ -1,5 +1,6 @@
 
-var music;
+let
+music;
 var dax;
 var bgImage;
 var houseImage;
@@ -10,7 +11,7 @@ var mapX = 0;
 var mapY = 0;
 
 function preload(){
-    music = loadSound('Chad_Crouch_-_Org.mp3');
+//    music = loadSound('Chad_Crouch_-_Org.mp3');
   
     dax = loadImage('daxter1.png');
     houseImage = loadImage('n5.gif');
@@ -24,6 +25,7 @@ var currentSetting = "home";
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    music = loadSound('Chad_Crouch_-_Org.mp3');
 
     imageMode(CENTER);
   player = new Player(1000, -100);
