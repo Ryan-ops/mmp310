@@ -26,7 +26,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
 
     imageMode(CENTER);
-  player = new Player(100, 100);
+  player = new Player(1000, -100);
 
   
   trees.push(new Tree(100, 100)); // this tree will be visible in the beginning
@@ -118,10 +118,10 @@ function narration(story) {
 }
 
 function instructions() {
-	textSize(18);
+	textSize(17);
 	fill('white');
 	// text("Click to go to the next scene", width - 100, height - 70, 100);
-	text("Click to navigate the story and use arrow keys to move Dax", width - 100, height - 70, 100);
+	text("Click to change scene and use arrow keys to move Dax", width - 120, height - 150, 100);
 }
 
 function home() {
